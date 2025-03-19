@@ -64,7 +64,7 @@ int sumaLista(List *L) {
    int* dato = first(L);
    while(dato != NULL)
    {
-      suma = suma + dato;
+      suma += *dato; //puntero es cmo acceder al dato que apunta el dato
       dato = next(L);
    }
 
