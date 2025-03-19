@@ -95,3 +95,14 @@ exercises.c:67:12: error: assignment makes integer from pointer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e91fa02
+Wed, Mar 19, 2025  9:17:44 AM: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:67:12: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       suma = suma + dato;
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+928cbd2
