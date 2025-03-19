@@ -2,3 +2,14 @@ Wed, Mar 19, 2025  8:38:23 AM:
  tests:  0|5
 total_score: 0/70
 3f6cb15
+Wed, Mar 19, 2025  8:47:02 AM: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:50:12: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+       dato = (int)k;
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9c476b7
