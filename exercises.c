@@ -85,8 +85,9 @@ void eliminaElementos(List*L, int elem){
    int* dato = first(L);
    while(dato != NULL)
    {
-      if(*dato == elem) //puntero es cmo acceder al dato que apunta el dato
+      if(*dato == elem){ //puntero es cmo acceder al dato que apunta el dato
          popCurrent(L);
+      }
       dato = next(L);
    }
 }
