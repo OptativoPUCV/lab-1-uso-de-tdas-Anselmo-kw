@@ -566,3 +566,15 @@ exercises.c:134:17: error: implicit declaration of function 'starlen'; did you m
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c3640ff
+Thu, Mar 20, 2025 12:01:29 PM: 
+ exercises.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:17: error: implicit declaration of function 'starlen'; did you mean 'strlen'? [-Werror=implicit-function-declaration]
+  134 |    int tamaño = starlen(cadena);
+      |                 ^~~~~~~
+      |                 strlen
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4617190
