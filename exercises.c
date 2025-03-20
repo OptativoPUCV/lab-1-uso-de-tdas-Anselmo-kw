@@ -111,13 +111,13 @@ void copia_pila(Stack* P1, Stack* P2) {
       dato = top(P1);
    }
 
-   void* dato = top(pilaAux);
+   void* dato2 = top(pilaAux);
    while(dato != NULL)
    {
-      push(P1, dato);
-      push(P2, dato);
+      push(P1, dato2);
+      push(P2, dato2);
       pop(pilaAux);
-      dato = top(pilaAux);
+      dato2 = top(pilaAux);
    }
    
 }

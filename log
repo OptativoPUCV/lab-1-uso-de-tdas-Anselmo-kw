@@ -530,3 +530,9 @@ exercises.c:105:10: note: previous definition of 'dato' with type 'void *'
       |          ^~~~
 Compilation failed
 a8e813d
+Thu, Mar 20, 2025 11:45:05 AM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  3|2
+total_score: 40/70
+53393a1
