@@ -131,7 +131,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 // ((())) = 
 int parentesisBalanceados(char *cadena) {
 
-   int tamaño = starlen(cadena);
+   int tamaño = strlen(cadena);
 
    /*
    int mitad = tamaño / 2;
