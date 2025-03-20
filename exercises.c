@@ -141,15 +141,15 @@ int parentesisBalanceados(char *cadena) {
       [ = 91 / ] = 93
       { = 123 / } = 125*/
 
-      for(int k = 0, i = tamaño-1; k < mitad ; k++, i--)
+      for(int k = 0, i = tamaño - 1 ; k < mitad ; k++, i--)
       {
          if((cadena[i]-cadena[k] != 1) || (cadena[i]-cadena[k] != 2))
             return 0;
       }
+
+      return 1;
    }
    else 
       return 0;
-
-   return 1;
 }
 
