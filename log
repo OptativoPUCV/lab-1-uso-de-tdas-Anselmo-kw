@@ -554,3 +554,15 @@ Thu, Mar 20, 2025 11:47:23 AM:
  tests:  4|1
 total_score: 50/70
 312a94e
+Thu, Mar 20, 2025 11:56:52 AM: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:17: error: implicit declaration of function 'starlen'; did you mean 'strlen'? [-Werror=implicit-function-declaration]
+  134 |    int tamaño = starlen(cadena);
+      |                 ^~~~~~~
+      |                 strlen
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c3640ff

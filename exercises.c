@@ -128,8 +128,19 @@ La función verifica si la cadena de entrada tiene sus
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
-
+// ((())) = 
 int parentesisBalanceados(char *cadena) {
-   return 0;
+
+   int tamaño = starlen(cadena);
+   int mitad = tamaño / 2;
+
+   for(int k = 0, i = tamaño-1; k < mitad ; k++, i--)
+   {
+      if(cadena[k] != cadena[i])
+         return 0;
+
+   }
+
+   return 1;
 }
 
