@@ -131,6 +131,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 // ((())) = 
 int parentesisBalanceados(char *cadena) {
 
+   //debo usar TDA pila u_u//
    int tamaño = strlen(cadena);
    
    if(tamaño % 2 == 1)
