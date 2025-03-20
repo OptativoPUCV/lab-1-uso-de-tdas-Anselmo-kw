@@ -135,7 +135,7 @@ int parentesisBalanceados(char *cadena) {
    if(tamano % 2 == 1)
       return 0;
    
-   //int mitad = tamano / 2;
+   int mitad = tamano / 2;
    /* tabla ascii
    ( = 40 / ) = 41
    [ = 91 / ] = 93
@@ -144,13 +144,13 @@ int parentesisBalanceados(char *cadena) {
    
    Stack* pilaAbre = create_stack();
    Stack* pilaCierra = create_stack();
-   /*
+   
    for(int i = 0 , k = tamano - 1 ; i < mitad ; i++, k--)
    {
       push(pilaAbre, &cadena[i]);
       push(pilaCierra, &cadena[k]);
    }
-   
+   /*
    //comparar
    void* abre = top(pilaAbre);
    void* cierra = top(pilaCierra);
