@@ -193,3 +193,14 @@ exercises.c:105:10: note: previous definition of 'dato' with type 'void *'
       |          ^~~~
 Compilation failed
 bcef57c
+Thu, Mar 20, 2025 11:32:59 AM: 
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:112:10: error: redefinition of 'dato'
+  112 |    void* dato = top(pilaAux);
+      |          ^~~~
+exercises.c:105:10: note: previous definition of 'dato' with type 'void *'
+  105 |    void* dato = top(P1);
+      |          ^~~~
+Compilation failed
+8263ff5
