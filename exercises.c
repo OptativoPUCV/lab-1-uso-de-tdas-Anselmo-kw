@@ -150,11 +150,12 @@ int parentesisBalanceados(char *cadena) {
       push(pilaAbre, &cadena[i]);
       push(pilaCierra, &cadena[k]);
    }
-   /*
+   
    //comparar
    void* abre = top(pilaAbre);
    void* cierra = top(pilaCierra);
 
+   /*
    while(abre != NULL)
    {
       if(cierra - abre !=1)
