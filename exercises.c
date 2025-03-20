@@ -130,27 +130,45 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 // ((())) = 
 int parentesisBalanceados(char *cadena) {
-
    //debo usar TDA pila u_u//
-   int tamaño = strlen(cadena);
-   
-   if(tamaño % 2 == 1)
+   int tamano = strlen(cadena);
+   if(tamano % 2 == 1)
       return 0;
    
-   int mitad = tamaño / 2;
+   //int mitad = tamano / 2;
    /* tabla ascii
    ( = 40 / ) = 41
    [ = 91 / ] = 93
-   { = 123 / } = 125*/
+   { = 123 / } = 125
+   */
+   /*
+   Stack* pilaAbre = create_stack();
+   Stack* pilaCierra = create_stack();
 
-   for(int i = 0, k = tamaño - 1 ; i < mitad ; i++, k--)
+   for(int i = 0 , k = tamaño - 1 ; i < mitad ; i++, k--)
    {
-      if(cadena[k]- cadena[i] != 1)
+      push(pilaAbre, &cadena[i]);
+      push(pilaCierra, &cadena[k]);
+   }
+
+   //comparar
+   void* abre = top(pilaAbre);
+   void* cierra = top(pilaCierra);
+
+   while(abre != NULL)
+   {
+      if(cierra - abre !=1)
       {
-         if(cadena[k]- cadena[i] != 2)
+         if(cierra - abre != 2)
             return 0;
       }
+      pop(pilaAbre);
+      pop(pilaCierra);
+      top(pilaAbre);
+      top(pilaCierra);
    }
+
+   return 1;*/
 
    return 1;
 }
