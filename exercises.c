@@ -155,7 +155,6 @@ int parentesisBalanceados(char *cadena) {
    void* abre = top(pilaAbre);
    void* cierra = top(pilaCierra);
 
-   /*
    while(abre != NULL)
    {
       if(cierra - abre !=1)
@@ -165,11 +164,9 @@ int parentesisBalanceados(char *cadena) {
       }
       pop(pilaAbre);
       pop(pilaCierra);
-      top(pilaAbre);
-      top(pilaCierra);
+      abre = top(pilaAbre);
+      cierra = top(pilaCierra);
    }
-
-   return 1;*/
-
+   
    return 1;
 }
