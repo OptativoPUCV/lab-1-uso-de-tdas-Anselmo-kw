@@ -648,3 +648,17 @@ Thu, Mar 20, 2025  3:50:25 PM:
  tests:  7|1
 total_score: 60/70
 4e23605
+Thu, Mar 20, 2025  3:55:56 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:146:11: error: unused variable 'pilaCierra' [-Werror=unused-variable]
+  146 |    Stack* pilaCierra = create_stack();
+      |           ^~~~~~~~~~
+exercises.c:145:11: error: unused variable 'pilaAbre' [-Werror=unused-variable]
+  145 |    Stack* pilaAbre = create_stack();
+      |           ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f36f28a
