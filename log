@@ -112,3 +112,16 @@ Wed, Mar 19, 2025  9:18:15 AM:
  tests:  3|2
 total_score: 40/70
 7e8879f
+Thu, Mar 20, 2025 11:23:48 AM: 
+ exercises.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:112:10: error: redefinition of 'dato'
+  112 |    void* dato = top(pilaAux);
+      |          ^~~~
+exercises.c:105:10: note: previous definition of 'dato' with type 'void *'
+  105 |    void* dato = top(P1);
+      |          ^~~~
+Compilation failed
+82990f2
